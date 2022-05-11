@@ -1,0 +1,257 @@
+
+/* about me */
+
+.aboutme {
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+
+.hero-img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(250deg, rgba(233, 231, 255, 0.8) 0%, rgba(214, 209, 250, 0.95) 60%, #D6D1FA 90%);
+    z-index: 1;
+}
+    
+.hero > * {
+    z-index: 2;
+}
+
+.hero-title {
+    margin-left: 6%;
+    margin-right: 6%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-content {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (min-width: 660px) {
+    .hero-title {
+         width: 45%;
+    } 
+    .hero::after {
+        background-image: linear-gradient(250deg, rgba(233, 231, 255, 0) 15%, rgba(214, 209, 250, 0.9) 55%, #D6D1FA 100%);
+    }
+}
+
+
+/* recent work */
+
+.recent-work {
+    margin: 80px 6% 24px 6%;
+}
+
+.workwrap {
+    margin-top: 24px;
+    margin-bottom: 0;
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+.work-card {
+    padding: 8px 8px 12px 8px;
+    outline: solid 2px #DAD5FB;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.work-card:hover {
+    background-color: #DAD5FB;
+    box-shadow: 4px 8px 8px #e6e4fe;
+  }
+
+.workcard-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.work-content {
+    margin: 0;
+    padding: 0 4px 4px 4px;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+    .work-card {
+         width: 48.49%;
+    } 
+}
+
+@media (min-width: 840px) {
+    .work-card {
+         width: 31.89%;
+    } 
+}
+
+
+
+/* skills & education */
+
+.skills-education {
+    background-image: linear-gradient(259.16deg, #F9ECFF -3.54%, #e9e7ff 100%);
+    margin: 80px 0 56px 0;
+    padding: 56px 0;
+    width: 100%;
+}
+
+.se-container {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.se-contentwrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.skillswrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.skill-card {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: solid  1px #1F1F1F;
+}
+
+.skill-card p {
+    line-height: 1.75rem;
+}
+
+.educationwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.education-card {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: solid  1px #1F1F1F;
+}
+
+@media (min-width: 800px) {
+    .se-contentwrap {
+        gap: 80px;
+    }
+
+    .skillswrap {
+         width: 30%;
+    } 
+
+    .educationwrap {
+        width: 58.64%;
+    }
+}
+
+
+
+/* footer contacts */
+
+footer {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 32px;
+    position: relative;
+    height: 230px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    left: 0;
+}
+
+.social {
+    margin-bottom: 32px;
+}
+
+.back2top-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.back2top {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;  
+    background-color: #EBE8FD;
+}  
+
+.back2top-img {
+    margin: 0 auto;
+}
+
+.back2top:hover {
+    background-color: #d3cdfa;
+    box-shadow: 4px 8px 8px #e6e4fe;
+}
+
+@media (min-width: 300px) {
+    footer {
+        height: 250px;
+    }
+}
+
+@media (min-width: 700px) {
+    .back2top-container {
+        margin: 0;
+        right: 0;
+        top: 0;
+    }
+
+    footer {
+        height: 120px;
+    }
+}

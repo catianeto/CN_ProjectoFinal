@@ -1,0 +1,12 @@
+---
+layout: portfolio
+title: My work
+---
+
+<h1>this is the blog page</h1>
+
+<uL>
+    {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</uL>

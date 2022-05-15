@@ -5,16 +5,16 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <div><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+        <div><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
       </div>   
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="footer-heading">{{ site.linkedin_username| escape }}</span></a>
       </div>
 
-      <!-- <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+      <div class="footer-col footer-col-3">
+        <a href="https://www.behance.net/{{ site.behance_username| cgi_escape | escape }}" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg> <span class="footer-heading">{{ site.behance_username| escape }}</span></a>
       </div>
-    </div> -->
+    </div>
 
   </div>
 

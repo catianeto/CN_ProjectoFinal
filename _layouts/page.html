@@ -4,7 +4,15 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% case page.title %}
+    {% when "About me" %}
+       <h1 class="post-title">Hi, there!</h1>
+    {% when "Say hi"%}
+       <h1 class="post-title">Drop me a line</h1>
+    {% when "My worl"%}
+       <h1 class="post-title">Check out my latest work</h1>
+    {% else %}
+  {% endcase %}
   </header>
 
   <div class="post-content">

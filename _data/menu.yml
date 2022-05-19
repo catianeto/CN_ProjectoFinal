@@ -1,0 +1,11 @@
+- title: Home
+  link: /
+
+- title: About me
+  link: /about/
+
+- title: My work
+  link: /portfolio/
+  
+- title: Say hi
+  link: /contact/

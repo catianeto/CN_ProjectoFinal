@@ -1,0 +1,53 @@
+/* work */
+
+
+
+.workwrap {
+    margin-top: $spacing-unit;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+.work-card {
+    padding: 8px 8px 12px 8px;
+    outline: solid 2px #DAD5FB;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.work-card:hover {
+    background-color: #DAD5FB;
+    box-shadow: 4px 8px 8px #e6e4fe;
+  }
+
+.workcard-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.work-content {
+    margin: 0;
+    padding: 0 4px 4px 4px;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+    .work-card {
+         width: 48.49%;
+    } 
+}
+
+@media (min-width: 840px) {
+    .work-card {
+         width: 31.89%;
+    } 
+}

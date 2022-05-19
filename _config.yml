@@ -36,9 +36,10 @@ plugins:
 
 # portfolio
 collections:
-  projectos: 
+  portfolio: 
     output: true
-    permalink: /projectos/:path
+    permalink: /portfolio/:name
+    folder: _portfolio
 
 # Exclude from processing.
 # The following items will not be processed, by default.

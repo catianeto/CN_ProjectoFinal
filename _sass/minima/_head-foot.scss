@@ -2,7 +2,8 @@
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid $brand-color-light;
+  margin: 0 $spacing-unit;
   min-height: 72px;
   display: flex;
   flex-direction: row;
@@ -11,6 +12,7 @@
  // Positioning context for the mobile navigation icon */
   position: relative;
 }
+
 
 .site-header .wrapper {
   width: 100%;
@@ -56,6 +58,10 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
+  }
+
+  .page-link-active {
+    color: $brand-color;
   }
 
   .trigger a:hover {
@@ -122,8 +128,14 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $brand-color-light;
   padding: $spacing-unit 0;
+  margin: 0 $spacing-unit;
+}
+
+.site-footer .wrapper {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-heading {

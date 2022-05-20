@@ -22,6 +22,8 @@
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- elsif page.url == "{{ my_page.url | relative_url }}" -%}
+            <div class="page-link-active">{{ my_page.title | escape }}</div>
             {%- endif -%}
           {%- endfor -%}
         </div>

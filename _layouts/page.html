@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post">
+<section class="post">
 
   <header class="post-header">
     {% case page.title %}
@@ -10,7 +10,7 @@ layout: default
     {% when "Say hi"%}
        <h1 class="post-title">Drop me a line</h1>
     {% when "My work"%}
-       <h1 class="post-title">Check out my latest work</h1>
+       <h1 class="post-title">Latest work</h1>
     {% else %}
   {% endcase %}
   </header>
@@ -19,4 +19,4 @@ layout: default
     {{ content }}
   </div>
 
-</article>
+</section>

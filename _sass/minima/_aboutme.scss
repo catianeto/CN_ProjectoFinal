@@ -25,7 +25,7 @@
 .about-subtitle {
     margin-top: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
-
+    color: $text-color;
 }
 
 
@@ -36,18 +36,15 @@
  */
 
 .skills-education {
-    // background-image: linear-gradient(259.16deg, #F9ECFF -3.54%, #e9e7ff 100%);
-    // margin: 80px 0 56px 0;
     margin-top: $spacing-unit *2;
     width: 100%;
 }
 
 .se-contentwrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $spacing-unit;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: $spacing-unit * 2;
     padding: 0;
-    margin: 8px 0 0 0;
 }
 
 .skillswrap {
@@ -55,35 +52,28 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    border-top: solid  1px $brand-color;
+
+    h4 {
+        color: $brand-color;
+    }
+
+    P {
+        margin-bottom: $spacing-unit * 0.3;
+    }
 }
 
 .cv-card {
     margin-top: $spacing-unit / 0.8;
-    padding-bottom: $spacing-unit / 0.8;
-    border-bottom: solid  1px #1F1F1F;
-}
-
-
-.educationwrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
 }
 
 
 
-@media (min-width: 800px) {
+@include media-query($on-laptop) {
+
     .se-contentwrap {
-        gap: 80px;
-    }
-
-    .skillswrap {
-         width: 30%;
-    } 
-
-    .educationwrap {
-        width: 58.64%;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 

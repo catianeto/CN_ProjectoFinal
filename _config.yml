@@ -38,7 +38,7 @@ plugins:
 collections:
   portfolio: 
     output: true
-    permalink: /portfolio/:name
+    permalink: /portfolio/:name:output_ext
     folder: _portfolio
 
 # Exclude from processing.

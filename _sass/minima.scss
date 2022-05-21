@@ -14,7 +14,7 @@ $base-line-height: 1.6 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #1F1F1F !default;
+$text-color:       #222222 !default;
 $background-color: #fdfbf7 !default;
 $brand-color:      #6c58ed !default;
 $brand-color-light: #DAD5FB !default;
@@ -23,7 +23,7 @@ $brand-color-dark: #2e207c !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark:  darken($grey-color, 20%) !default;
 
 $dropshadow-small: drop-shadow(8px 8px 16px $grey-color-light) !default;
 $dropshadow: drop-shadow(16px 16px 16px $grey-color-light) !default;

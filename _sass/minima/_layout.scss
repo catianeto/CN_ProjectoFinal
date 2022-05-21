@@ -1,6 +1,5 @@
-/**
- * Page content
- */
+/* Page content */
+
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
@@ -35,9 +34,7 @@
 
 
 
-/**
- * Posts
- */
+/* Posts */
 .post-header {
   margin-bottom: $spacing-unit;
 }
@@ -47,8 +44,7 @@
   font-weight: $medium-font-weight;
   line-height: 1;
   margin-top: $spacing-unit;
-  text-align: center;
-  color: $brand-color;
+  color: $text-color;
 }
 
 .post-content {
@@ -63,6 +59,8 @@
   }
 
   h3 {
+    color: $brand-color;
+
     @include relative-font-size(1.625);
 
     @include media-query($on-laptop) {

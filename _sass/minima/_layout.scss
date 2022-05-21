@@ -40,7 +40,7 @@
 }
 
 .post-title {
-  @include relative-font-size(2.5);
+  @include relative-font-size(2.2);
   font-weight: $medium-font-weight;
   line-height: 1;
   margin-top: $spacing-unit;
@@ -59,7 +59,7 @@
   }
 
   h3 {
-    color: $brand-color;
+    color: $text-color;
 
     @include relative-font-size(1.625);
 

@@ -1,0 +1,14 @@
+project-1:
+- title: Coimbra Viva
+  link: /portfolio/project-1.html
+  image-path: /assets/img/CoimbraViva.jpg
+
+project-2:
+- title: Women in Leadership
+  link: /portfolio/project-2.html
+  image-path: /assets/img/5GCLF_executiva.jpg
+
+project-3:
+- title: Changing Tomorrow Now
+  link: /portfolio/project-3.html
+  image-path: /assets/img/edp_ChangingTomorrowNow.jpg

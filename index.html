@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <section class="hero">
   <div class="hero-title">
     <div class="home-h" >
@@ -54,7 +53,9 @@ layout: default
 
 <section class="home-work">
   <h3>My recent work</h3>
-  {%- include work-cards-home.html -%}
+  <div class="home-work-wrapper">
+   {%- include work-cards-home.html -%}
+  </div>
 </section>
 
 

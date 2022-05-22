@@ -48,7 +48,7 @@
     text-decoration: none;
     color: $background-color;
     border-radius: $round-corners;
-
+    transition: $hover-fade;
   }
  
 }
@@ -90,8 +90,6 @@
 .services {
   margin-top: $spacing-unit * 3;
   margin-bottom: $spacing-unit * 3;
-  // padding-bottom: $spacing-unit;
-  // border-bottom: 1px dotted $brand-color;
 }
 .services-wrapper{
   display: flex;

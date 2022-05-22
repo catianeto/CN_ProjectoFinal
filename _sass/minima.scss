@@ -25,13 +25,14 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 20%) !default;
 
-$dropshadow-small: drop-shadow(8px 8px 12px #dfdfdf) !default;
+$dropshadow-small: drop-shadow(6px 6px 12px #e4e4e4) !default;
 $dropshadow: drop-shadow(8px 8px 12px #bebebe) !default;
 
 $round-corners: 8px !default;
 
 $divider: 1px dotted $brand-color !default;
 
+$hover-fade: 0.5s !default;
 
 // Width of the content area
 $content-width:    1200px !default;

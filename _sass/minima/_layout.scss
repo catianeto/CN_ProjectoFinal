@@ -22,10 +22,11 @@
   }
 }
 
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
+// .post-meta {
+//   margin-top: $spacing-unit / 2;
+//   font-size: $small-font-size;
+//   color: $grey-color;
+// }
 
 .post-link {
   display: block;
@@ -74,5 +75,31 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
+  }
+}
+
+/* project page */
+
+.tag-wrapper {
+  margin-top: $spacing-unit;
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-unit / 2;
+}
+
+.project-end {
+  margin: $spacing-unit * 2 0;
+  padding-top: $spacing-unit;
+  border-top: $divider;
+  text-align: center;
+}
+
+@include media-query($on-palm) {
+  .tag-wrapper {
+      margin-top: $spacing-unit / 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: fit-content;
   }
 }

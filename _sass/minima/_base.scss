@@ -139,21 +139,6 @@ a {
 }
 
 
-/**
- * Blockquotes
- */
-// blockquote {
-//   color: $grey-color;
-//   border-left: 4px solid $grey-color-light;
-//   padding-left: $spacing-unit / 2;
-//   @include relative-font-size(1.125);
-//   letter-spacing: -1px;
-//   font-style: italic;
-
-//   > :last-child {
-//     margin-bottom: 0;
-//   }
-// }
 
 
 
@@ -218,9 +203,7 @@ pre {
 
 
 
-/**
- * Icons
- */
+/* Icons */
 
 .svg-icon {
     width: 16px;
@@ -236,32 +219,50 @@ pre {
   }
 }
 
+/* chips/tags */
 
+.chip {
+  padding: 6px;
+  border: 1px solid $brand-color;
+  border-radius: $round-corners;
+  background-color: $brand-color-light;
 
-// /**
-//  * Tables
-//  */
-// table {
-//   margin-bottom: $spacing-unit;
-//   width: 100%;
-//   text-align: $table-text-align;
-//   color: lighten($text-color, 18%);
-//   border-collapse: collapse;
-//   border: 1px solid $grey-color-light;
-//   tr {
-//     &:nth-child(even) {
-//       background-color: lighten($grey-color-light, 6%);
-//     }
-//   }
-//   th, td {
-//     padding: ($spacing-unit / 3) ($spacing-unit / 2);
-//   }
-//   th {
-//     background-color: lighten($grey-color-light, 3%);
-//     border: 1px solid darken($grey-color-light, 4%);
-//     border-bottom-color: darken($grey-color-light, 12%);
-//   }
-//   td {
-//     border: 1px solid $grey-color-light;
-//   }
-// }
+  h5 {
+      font-weight: $bold-font-weight;
+      color: $brand-color;
+      margin-bottom: 0;
+      line-height: $base-line-height * 0.8;
+  }
+
+}
+
+.icon-btn {
+  padding: 6px;
+  border-radius: $round-corners;
+  background-color: $background-color;
+  border: 1px solid $grey-color-light;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/* srcollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $grey-color-light; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $brand-color; 
+}

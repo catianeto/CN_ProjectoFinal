@@ -41,10 +41,10 @@ collections:
     permalink: /portfolio/:name:output_ext
     folder: _portfolio
 
-  older-work:
+  archive:
     output: true
     permalink: /portfolio/:name:output_ext
-    folder: _older-work
+    folder: _archive
 
 # Exclude from processing.
 # The following items will not be processed, by default.

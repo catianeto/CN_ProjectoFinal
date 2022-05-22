@@ -42,7 +42,28 @@
 }
 
 .archive {
-    margin-top: $spacing-unit * 2;
+    margin-top: $spacing-unit * 3;
+    padding: $spacing-unit 0;
+    border-top: $divider;
+
+    h4 {
+        margin-bottom: 12px;
+    }
+}
+
+.archive-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: $divider;
+    align-items: center;
+    padding: 6px;
+
+    &:hover {
+        background-color: $brand-color-light;
+        text-decoration: none;
+    }
+
 }
  
 /* work cards */ 
@@ -63,8 +84,8 @@
     width: 89%;
     position: absolute;
     left: 0;
-    bottom: $spacing-unit;
-    border-top: 1px solid white;
+    top: 75%;
+    border-top: 1px dotted white;
     padding-top: 8px;
   
     h4 {
@@ -166,5 +187,15 @@
 
     .carousel {
         height: 320px;
+    }
+
+    .work-hero {
+        height: 320px;
+    }
+
+    .work-description {
+        display: flex;
+        flex-wrap: wrap;
+        margin: $spacing-unit 0;
     }
 }

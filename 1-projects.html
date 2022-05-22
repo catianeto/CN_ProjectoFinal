@@ -4,18 +4,23 @@ title: My work
 permalink: /portfolio/
 ---
 
-<section class="work-page">
+<div class="work-page">
     <p>These are some of the projects I've been a part of, so far.</p>
     <ul class="work-page-wrapper">
     {%- include work-cards-home.html -%}
     </ul>
-</section>
+</div>
 
-<section class="archive">
+<div class="archive">
     <h4>Other projects</h4>
     <uL>
         {% for project in site.archive %}
-        <li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
+        <li>
+            <a class="archive-li" href="{{ site.baseurl }}{{ project.url }}">
+             <p>{{ project.title }} | {{ project.date | date: '%B %d, %Y' }}</p>
+             {%- include icon-arrow-right.svg -%}
+            </a>
+        </li>
         {% endfor %}
     </uL>
-</section>
+</div>

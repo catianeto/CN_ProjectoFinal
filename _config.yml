@@ -41,6 +41,11 @@ collections:
     permalink: /portfolio/:name:output_ext
     folder: _portfolio
 
+  older-work:
+    output: true
+    permalink: /portfolio/:name:output_ext
+    folder: _older-work
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

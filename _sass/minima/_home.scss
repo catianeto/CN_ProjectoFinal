@@ -1,16 +1,17 @@
 
 .hero {
-    width: 100%;
-    position: relative;
-    height: 350px;
+  width: 100%;
+  position: relative;
+  height: 350px;
+  border-bottom: 1px dotted $brand-color;
 }
 
 .hero-title {
-    width: 80%;
-    position: absolute;
-    left: 0;
-    top: 65%;
-    transform: translateY(-50%);
+  width: 75%;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
 }
 
 .hero-title h3 {
@@ -24,7 +25,7 @@
   gap: 6px;
    
   h1 {
-    font-size: $base-font-size * 2.8;
+    font-size: $base-font-size * 2.7;
   }
 }
 
@@ -32,12 +33,14 @@
   display: flex;
   flex-direction: row;
   margin: 0;
-  gap: 6px;
+  gap: 10px;
   
   a {
     padding: 0 8px;
-    border: 2px solid $brand-color;
+    border: 1px solid $brand-color;
     border-radius: $round-corners;
+    background-color: $background-color;
+    filter: $dropshadow-small;
   }
   a:hover {
     padding: 0 8px;
@@ -78,7 +81,7 @@
     h1 {
       font-size: $base-font-size * 2;
       line-height: $base-line-height * 0.8;
-  }
+    }
   }
 }
 
@@ -86,20 +89,22 @@
 /* services */ 
 .services {
   margin-top: $spacing-unit * 3;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit * 3;
+  // padding-bottom: $spacing-unit;
+  // border-bottom: 1px dotted $brand-color;
 }
 .services-wrapper{
   display: flex;
   justify-content: space-between;
   margin-top: $spacing-unit;
-  gap: 4px;
 }
 
 .service-card {
   display: flex;
   flex-direction: row;
   gap: $spacing-unit;
-  align-items: left;
+  flex-wrap: wrap;
+  margin-bottom: $spacing-unit / 2;
 
   h4 {
     font-weight: $bold-font-weight;
@@ -111,16 +116,19 @@
   background-color: $background-color;
   width: 100px;
   height: 100px;
-  margin-bottom: $spacing-unit / 2;
   border-radius: 8px;
   filter: $dropshadow-small;
+}
+
+.service-content {
+  width: 61%;
 }
 
 @include media-query($on-laptop) {
 
   .services-wrapper {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

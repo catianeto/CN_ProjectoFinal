@@ -1,64 +1,80 @@
-/* work */
+/* homepage */
+.home-work {
+    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing-unit * 2; 
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-unit;
+}
 
+/* work page */
 .work-page {
     display: flex;
     flex-direction: column;
-    gap: $spacing-unit
+    gap: $spacing-unit;
 }
 
-.work-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.work-page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    grid-template-rows: 2fr 2fr;   
+    gap: $spacing-unit;
 }
 
+@include media-query($on-laptop) {
+    .work-page-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
-/* work */ 
-.home-work {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit * 2;
-  }
-  
-  .home-work-card {
+.older-work {
+    margin-top: $spacing-unit * 2;
+}
+ 
+/* work cards */ 
+.home-work-card {
     width: 100%;
     position: relative;
     height: 400px;
-    margin-top: $spacing-unit;
     background-color: $brand-color;
     border-radius: $round-corners;
-    filter: $dropshadow;
-  }
-  
-  .work-card-content {
+    filter: $dropshadow-small;
+}
+
+.work-card-content {
     margin-left: $spacing-unit;
     margin-right: $spacing-unit;
     width: 80%;
     position: absolute;
     left: 0;
-    bottom: $spacing-unit / 2;
+    bottom: $spacing-unit;
     border-top: 1px solid white;
     padding-top: 8px;
+    flex-grow: 1;
   
     h3 {
       font-weight: $medium-font-weight;
+      font-size: $base-font-size * 1.2;
+      line-height: $base-line-height * 0.8;
       color: white;
-      margin-bottom: 0;
+      margin-bottom: 6px;
     }
     
     p {
       color: white;
       font-size: $small-font-size;
     }
-  }
+}
   
-  .work-card-img {
+.work-card-img {
     width: 100%;
     height: 400px;
     object-fit:cover;
     text-align: center;
     margin: auto;
     border-radius: $round-corners;
-  }
+}
   
   // .home-work-card::after{
   //   content: '';
@@ -74,7 +90,7 @@
   //   z-index: 2;
   // }
   
-  .work-card-img:hover {
+.work-card-img:hover {
     filter: opacity(20%);
-  }
+}
   

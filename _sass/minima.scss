@@ -25,8 +25,8 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 20%) !default;
 
-$dropshadow-small: drop-shadow(8px 8px 16px $grey-color-light) !default;
-$dropshadow: drop-shadow(16px 16px 16px $grey-color-light) !default;
+$dropshadow-small: drop-shadow(8px 8px 12px #dfdfdf) !default;
+$dropshadow: drop-shadow(8px 8px 12px #bebebe) !default;
 
 $round-corners: 8px !default;
 

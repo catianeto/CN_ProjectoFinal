@@ -5,16 +5,15 @@ permalink: /portfolio/
 ---
 
 <section class="work-page">
-    <div class="work-wrapper">
-        {%- include work-cards-home.html -%}
-    </div>
-
+    <p>These are some of the projects I've been a part of, so far.</p>
+    {%- include work-cards-home.html -%}
 </section>
 
-<section class="older-work">
+<!-- <section class="older-work">
+    <h4>Other projects</h4>
     <uL>
         {% for project in site.portfolio %}
         <li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
         {% endfor %}
     </uL>
-</section>
+</section> -->

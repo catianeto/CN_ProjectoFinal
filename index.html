@@ -20,31 +20,31 @@ layout: default
   <div class="services-wrapper">
     <div class="service-card">
       <figure class="service-img">
-        <img>
+        <img src="{{ site.baseurl }}/assets/img/strategy@2x.png">
       </figure>
       <div class="service-content">
         <h4>Creative strategy</h4>
-        <p>some description goes here some description goes here some description goes here </p>
+        <p>Help you draw the blueprint that outlines how to meet specific goals and objectives.</p>
     </div>
   </div>
 
   <div class="service-card">
     <figure class="service-img">
-      <img>
+      <img src="{{ site.baseurl }}/assets/img/brand@2x.png">
     </figure>
     <div class="service-content">
       <h4>Branding</h4>
-      <p>some description goes here some description goes here some description goes here </p>
+      <p>Work with you to define the unique character of your product or service.</p>
     </div>
   </div>
 
   <div class="service-card">
     <figure class="service-img">
-      <img>
+      <img src="{{ site.baseurl }}/assets/img/experience@2x.png">
     </figure>
     <div class="service-content">
       <h4>Digital experiences</h4>
-      <p>some description goes here some description goes here some description goes here </p>
+      <p>Design seamless and coherent experiences that resonate with your user.</p>
     </div>
   </div>
 </div>
@@ -53,8 +53,12 @@ layout: default
 
 <section class="home-work">
   <div class="home-work-head">
-   <h3>Projects I've worked on</h3>
-   {%- include icon-arrow-right.svg -%}
+    <h3>Projects I've worked on</h3>
+    <div class="scroll-alert">
+      <h5>scroll for more projects</h5>
+      <a href="#h-first"> {%- include icon-arrow-left.svg -%}</a>
+      <a href="#h-last"> {%- include icon-arrow-right.svg -%}</a>
+    </div>
   </div>
   <div class="home-work-wrapper">
    {%- include work-cards-home.html -%}

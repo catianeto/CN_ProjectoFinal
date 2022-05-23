@@ -36,14 +36,14 @@
   gap: 10px;
   
   a {
-    padding: 0 8px;
+    padding: 0 10px;
     border: 1px solid $brand-color;
     border-radius: $round-corners;
     background-color: $background-color;
     filter: $dropshadow-small;
   }
   a:hover {
-    padding: 0 8px;
+    padding: 0 10px;
     background-color: $brand-color;
     text-decoration: none;
     color: $background-color;

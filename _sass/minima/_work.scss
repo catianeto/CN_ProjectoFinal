@@ -7,18 +7,36 @@
     gap: $spacing-unit;
 }
 
+.home-work-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+
+    h3{
+        margin-bottom: 0;
+    }
+
+    svg {
+        stroke: $brand-color;
+    }
+}
+
 .home-work-wrapper {
     width: 100%;
-    height: 400px;
+    height: 540px;
     display: flex;
     flex-direction: row;
     gap: 8px;
-    overflow: auto;
-}
+    overflow: scroll;
+    border-radius: $round-corners;
 
-.home-work-wrapper .home-work-card {
-    width: $content-width;
+    .home-work-card {
+        min-width: $content-width * 0.8;
+    }
+    
 }
+ 
 
 /* work page */
 .work-page {
@@ -51,7 +69,12 @@
     }
 }
 
-.archive-li {
+.reverse-column {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.archive-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,49 +86,24 @@
         background-color: $brand-color-light;
         text-decoration: none;
     }
-
 }
  
 /* work cards */ 
 .home-work-card {
     width: 100%;
     position: relative;
-    height: 400px;
+    height: 100%;
     background-color: $brand-color;
     border-radius: $round-corners;
     filter: $dropshadow-small;
     overflow: hidden;
 }
 
-
-.work-card-content {
-    margin-left: $spacing-unit;
-    margin-right: $spacing-unit;
-    width: 89%;
-    position: absolute;
-    left: 0;
-    top: 75%;
-    border-top: 1px dotted white;
-    padding-top: 8px;
-  
-    h4 {
-      font-weight: $bold-font-weight;
-      line-height: $base-line-height * 0.8;
-      color: white;
-      margin-bottom: 6px;
-    }
-    
-    p {
-      color: white;
-      font-size: $small-font-size;
-    }
-}
   
 .work-card-img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit:cover;
-    text-align: center;
     margin: auto;
     border-radius: $round-corners;
     transition: 0.3s;
@@ -115,33 +113,48 @@
         transform: scale(1.02);
         transition: $hover-fade;
     }
+}
+
+.home-work-card:hover {
+
+    .work-card-img {
+        filter: opacity(20%);
+        transform: scale(1.02);
+        transition: $hover-fade;
+    }
+
+    .work-card-content {
+        margin: 0 $spacing-unit;
+        position: absolute;
+        left: 0;
+        bottom: $spacing-unit;
+        border-top: 1px dotted white;
+        padding-top: 8px;
+    
+        h4 {
+          font-weight: $bold-font-weight;
+          font-size: $base-font-size * 1.25;
+          line-height: $base-line-height * 0.8;
+          color: white;
+          margin-bottom: 6px;
+        }
+        
+        p {
+          color: white;
+          font-size: $small-font-size;
+        }
+    }
 
 }
 
 
-  // .home-work-card::after{
-  //   content: '';
-  //   position: absolute;
-  //   left: 0; top: 0;
-  //   width: 100%; height: 100%;
-  //   background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
-  //   z-index: 1;
-  //   border-radius: $round-corners;
-  // }
-  
-  // .home-work-card > * {
-  //   z-index: 2;
-  // }
-  
-
-
 /* project page */
-
 .work-hero {
     width: 100%;
     height: 450px;
     position: relative;
 }
+
 .work-hero-img {
     width:100%;
     height:100%;
@@ -159,8 +172,23 @@
     gap: $spacing-unit;
 }
 
-.gallery {
-    text-align: right;
+.scroll-alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: $spacing-unit / 2;
+    align-items: center;
+
+    h5 {
+        font-weight: $medium-font-weight;
+        color: $text-color;
+    }
+    svg {
+        border: 1px solid $brand-color-light;
+    }
+    a:hover {
+        filter: $dropshadow-small;
+    }
 }
 
 .carousel {
@@ -172,8 +200,7 @@
     gap: 8px;
     overflow: auto;
     border-radius: $round-corners;
-    // scrollbar-width: thin;
-    // scrollbar-color: $brand-color;
+    scroll-behavior: smooth;
 }
 
 .gallery-img {
@@ -184,6 +211,10 @@
 }
 
 @include media-query($on-palm) {
+
+    .scroll-alert {
+        justify-content: flex-start;
+    }
 
     .carousel {
         height: 320px;

@@ -240,22 +240,27 @@ a {
   }
 }
 
-/* srcollbar */
-::-webkit-scrollbar {
-  width: 2px;
-}
+// /* srcollbar */
+// ::-webkit-scrollbar {
+//   margin-top: 10px;
+//   height: 12px;
+//   border-radius: 10px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: $background-color;
-}
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: $background-color;
+//   border-radius: 10px;
+// }
  
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $grey-color-light; 
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: $brand-color-light;
+//   border-radius: 10px;
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $brand-color; 
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: $brand-color; 
+// }

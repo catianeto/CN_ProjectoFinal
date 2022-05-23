@@ -38,12 +38,12 @@ plugins:
 collections:
   portfolio: 
     output: true
-    permalink: /portfolio/:name:output_ext
+    permalink: /portfolio/:title:output_ext
     folder: _portfolio
 
   archive:
     output: true
-    permalink: /portfolio/:name:output_ext
+    permalink: /portfolio/archive/:title:output_ext
     folder: _archive
 
 # Exclude from processing.

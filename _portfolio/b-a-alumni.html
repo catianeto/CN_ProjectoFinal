@@ -13,19 +13,20 @@ category2: Visual identity
 </div>
 
 <div class="work-description">
-    <h4>title phrase somethinmg</h4>
+    <h4>Creating a platform to serve former students after they leave the institution.</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque vel varius amet massa est volutpat mauris. Phasellus urna, commodo aliquam mi urna nunc tempus. Tempor enim quis sagittis eu. Et consectetur sed sit congue mattis risus vitae dui. Mattis eget egestas vulputate ac sed velit posuere. Vitae nibh sapien eget malesuada amet consequat nullam. Imperdiet fringilla lacinia eu mattis ultrices</p>
 </div>
 
 <div class="gallery">
-    <h5>cool images</h5>
-    <Figure>
-        {%- include icon-arrow-left.svg -%}
-        {%- include icon-arrow-right.svg -%}
-    </Figure>
+    <div class="scroll-alert">
+        <h5>scroll for more cool images</h5>
+        <a href="#ba-first"> {%- include icon-arrow-left.svg -%}</a>
+        <a href="#ba-last"> {%- include icon-arrow-right.svg -%}</a>
+    </div>
     <figure class="carousel">
-        <img class="gallery-img" src="{{ site.baseurl }}/assets/img/b-a-gallery1.jpg" alt="View of the alumni b-a alumni website on a laptop">
+        <img id="ba-first" class="gallery-img" src="{{ site.baseurl }}/assets/img/b-a-gallery1.jpg" alt="View of the alumni b-a alumni website on a laptop">
         <img class="gallery-img" src="{{ site.baseurl }}/assets/img/b-a-gallery2.jpg" alt="Homepage of b-a alumni website on mobile phone">
         <img class="gallery-img" src="{{ site.baseurl }}/assets/img/b-a-gallery3.jpg" alt="Homepage of b-a alumni website">
+        <img id="ba-last" class="gallery-img" src="{{ site.baseurl }}/assets/img/b-a-gallery4.jpg" alt="Page of b-a alumni website on ipad">
     </figure>
 </div>

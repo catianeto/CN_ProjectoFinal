@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <div>
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" title="Go to homepage">{{ site.title | escape }}</a>
     </div>
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -21,7 +21,7 @@
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="page-link" href="{{ my_page.url | relative_url }}" title="{{ my_page.link-title }}">{{ my_page.title | escape }}</a>
             {%- elsif page.url == "{{ my_page.url | relative_url }}" -%}
             <div class="page-link-active">{{ my_page.title | escape }}</div>
             {%- endif -%}

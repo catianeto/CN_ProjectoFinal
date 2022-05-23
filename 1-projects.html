@@ -2,6 +2,7 @@
 layout: page
 title: My work
 permalink: /portfolio/
+link-title: Go to portfolio page
 ---
 
 <div class="work-page">
@@ -13,10 +14,10 @@ permalink: /portfolio/
 
 <div class="archive">
     <h4>Other projects</h4>
-    <uL>
+    <uL class="reverse-column">
         {% for project in site.archive %}
         <li>
-            <a class="archive-li" href="{{ site.baseurl }}{{ project.url }}">
+            <a class="archive-item" href="{{ site.baseurl }}{{ project.url }}" title="{{ project.link-title }}">
              <p>{{ project.title }} | {{ project.date | date: '%B %d, %Y' }}</p>
              {%- include icon-arrow-right.svg -%}
             </a>

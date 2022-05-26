@@ -30,11 +30,7 @@
     line-height: $base-line-height * 0.8;
 }
 
-
-
-
 /* CV */
-
 .skills-education {
     margin-top: $spacing-unit *2;
     width: 100%;
@@ -67,8 +63,6 @@
 .cv-card {
     margin-top: $spacing-unit / 0.8;
 }
-
-
 
 @include media-query($on-laptop) {
 

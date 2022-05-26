@@ -194,7 +194,7 @@ a:active { color: #6c58ed; text-decoration: none; }
 
 @media screen and (max-width: 800px) { .se-contentwrap { display: flex; flex-wrap: wrap; } .about-wrapper { display: flex; flex-wrap: wrap; } }
 
-/* homepage */
+/* work cards at homepage */
 .home-work { margin-top: 60px; margin-bottom: 60px; display: flex; flex-direction: column; gap: 30px; }
 
 .home-work-head { display: flex; flex-direction: row; justify-content: space-between; }

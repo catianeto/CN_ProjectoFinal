@@ -1,4 +1,4 @@
-/* homepage */
+/* work cards at homepage */
 .home-work {
     margin-top: $spacing-unit * 2;
     margin-bottom: $spacing-unit * 2; 
@@ -34,7 +34,6 @@
     .home-work-card {
         min-width: $content-width * 0.8;
     }
-    
 }
  
 @include media-query($on-laptop) {
@@ -113,7 +112,6 @@
     filter: $dropshadow-small;
     overflow: hidden;
 }
-
   
 .work-card-img {
     width: 100%;
@@ -159,7 +157,6 @@
           font-size: $small-font-size;
         }
     }
-
 }
 
 /* project page */

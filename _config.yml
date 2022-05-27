@@ -1,9 +1,9 @@
 title: Cates
 email: catiacneto@gmail.com
-description: >- 
-    Hi! I'm Cátia,a multidiciplinary designer with special focus on creating meaningful brands, and craft the brand experience throughtout multiple touchpoints.This is my website where you can learn a bit more about me and my work. Nice to meet you!
+description: >- # this means to ignore newlines until "baseurl:"
+  Hi! I'm Cátia, a multidiciplinary designer. This is my website where you can learn a bit more about me and my work. Nice to meet you!
 baseurl: /CN_ProjectoFinal
-url: "" 
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: catianeto
 behance_username: catianeto
 
